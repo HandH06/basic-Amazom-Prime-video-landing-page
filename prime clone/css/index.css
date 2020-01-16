@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --one : rgb(0, 0, 0) ;
+    --two: #131A22;
+    --three: #37475A;
+    --four:#fff;
+    --five:#079bcc;
+}
+button{
+    background-color: var(--five);
+    color:var(--four);
+    padding: 0.8rem;
+    border: none;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    width: 300px;
+    font-size: 18px; 
+}
+/* Globally setting */
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    font-weight: normal;
+  }
+h4{
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+/* Globally setting ends here */
+
+.header{
+    background-color: var(--two);
+    height: 95px;
+    padding: 1rem;
+}
+#headerimg{
+    width: 150px;
+    padding-top: 10px;
+}
+.slide img{
+    float: right;
+    height: 600px;
+    float: right;
+    width: 65%;
+    height: 600px;
+
+}
+.slide{
+    background-color: var(--one);
+    color:var(--four);
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* Styling Side2 */
+.slide2{
+    background-color: var(--one);
+    color: var(--four);
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+}
+
+.slide2 h1{
+    padding-top: 5rem;
+}
+.slide2 p{
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+}
+.slide2 h4{
+    padding-right: 2rem;
+}
+#memberimg{
+    float: right;
+    width: 600px;
+    height: 350px;
+    margin-right: 3rem;
+    margin-top: 7rem;
+}
+
+/* Styling Side3 */
+.slide3{
+    background-color: var(--one);
+    color: var(--four);
+    padding-top: 3rem;
+    padding-left:5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 0rem;
+    padding-right: 3rem;
+}
+.slide3 h1{
+    padding-top: 5rem;
+}
+.slide3 p{
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+#firetvimg{
+    float: left;
+    width: 600px;
+    height: 450px;
+    padding: 3rem;
+}
+
+
+/* slide4 styling */
+.slide4{
+    float: left;
+    width: 33.3%;
+    padding: 45px;
+}
+.slide4::after{
+    clear: both;
+    display: table;
+}
+
+/* slide5 styling */
+.slide5{
+    padding-top: 5rem;
+    background-color: var(--one);
+    color: var(--four);
+    padding-left: 4rem;
+    padding-bottom: 5rem;
+    padding-right: 1rem;
+    
+}
+#familyImg{
+    float: right;
+    width: 600px;
+    height: 400px;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+
+    
+}
+
+/* styling footer */
+.footer{
+    background-color:var(--two);
+    height: 150px;
+}
+.footer .fimg{
+    width: 100%;
+    padding-left: 45%;
+    margin: auto;
+    padding-top: 2rem;
+}
+.footer a{
+    color: var(--five);
+    font-size: 14px;
+    float: left;
+    padding-right: 10px;
+}
+.text{
+    width: 100%;
+    padding-left: 27%;
+}
+.footer li{
+    text-decoration: none;
+    display: inline;
+}
+.footer p{
+    color: var(--four);
+    font-size: 14px;
+}
+
+/* adding mediaquaries */
+
+@media(max-width: 850px){
+    button{
+        width: 100%;
+    }
+    #mainImg{
+        visibility: hidden;
+        height: 110px;
+    }
+    .slidetext, h1, h4, p {
+        text-align: center;
+        padding-left: 1rem;
+    }
+    .slidetext, h1{
+        font-size: 2rem;
+        font-weight: 400;
+        padding-top: 15rem;
+    }
+    .slidetext, h4{
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .slidetext, p{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .slidetext2{
+        text-align: center;
+    }
+    #memberimg{
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    .slidetext2, h1{
+        font-size: 2.1rem;
+    }
+    .slidetext2, h4{
+        font-size: 1.1rem;
+    }
+    .slidetext2{
+        text-align: center;
+    }
+    #firetvimg{
+        width: 100%;
+    }
+    .slidetext3, h1{
+        font-size: 2.1rem;
+    }
+    .slidetext3, h4{
+        font-size: 1rem;
+    }   
+    #familyImg{
+        width: 100%;
+    }
+    .slidetext3, h1{
+        font-size: 2.1rem;
+    }
+    .slidetext3, h4{
+        font-size: 1rem;
+    }
+    .footer, img{
+        width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .slide2{
+        width: 100%;
+        margin-left: 0 0;
+        padding-left: 0 0;
+    }
+    #memberimg{
+        width: 100%;
+        margin-left: 0 0;
+        padding-left: 0 0;
+    }
+    .slide3{
+        width: 100%;
+        margin-left: 0 0;
+        padding-left: 0 0;
+    }
+    #firetvimg{
+        width: 100%;
+        margin-left: 0 0;
+        padding-left: 0 0;
+    }
+}
